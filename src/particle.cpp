@@ -5,6 +5,7 @@ Particle::Particle(float x, float y, float mass, bool fixed)
     : position(x, y), mass(mass), fixed(fixed) {
     shape.setRadius(5);
     shape.setFillColor(sf::Color::White);
+    shape.setOrigin(5, 5);
     shape.setPosition(position);
 }
 
