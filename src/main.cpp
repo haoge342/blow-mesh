@@ -2,7 +2,7 @@
 #include "mesh.hpp"
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode(800, 800), "Cloth Simulation");
+    sf::RenderWindow window(sf::VideoMode(800, 800), "Blow Mesh");
     Mesh mesh(10, 10, 40.0f);
     const float ANIME_SPEED = 1.0f - 0.50f;
     bool start = false;
@@ -28,7 +28,6 @@ int main() {
             mesh.applyWind(100.0f);
             mesh.update(0.016f * ANIME_SPEED); // fixed time step / frame rate
         }
-
 
         window.clear();
         mesh.draw(window);
