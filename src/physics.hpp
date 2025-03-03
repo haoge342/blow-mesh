@@ -8,7 +8,7 @@ const sf::Vector2f GRAVITY(0.0f, 980.0f);
 
 // wind force
 inline sf::Vector2f windForce(float force) {
-    return sf::Vector2f(0, -force);
+    return sf::Vector2f(force, 0); // wind is blowing from the left to the right ->
 }
 
 // damping, air resistance

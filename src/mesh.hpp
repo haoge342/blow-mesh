@@ -18,11 +18,13 @@ public:
     std::vector<Particle> particles;
     std::vector<Spring> springs;
     int rows, cols;
+    bool windActive = false;
 
     Mesh(int rows, int cols, float spacing);
     void applyWind(float force);
     void update(float dt);
     void draw(sf::RenderWindow &window);
+    void handleMouseClick();
 };
 
 #endif // MESH_HPP
